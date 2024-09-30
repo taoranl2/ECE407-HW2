@@ -1,0 +1,2 @@
+openssl enc -aes-128-ecb -in test.bmp -out test_ecb.bmp -K 00112233445566778899aabbccddeeff
+openssl enc -aes-128-cbc -in test.bmp -out test_cbc.bmp -K 00112233445566778899aabbccddeeff -iv 01020304050607080102030405060708
