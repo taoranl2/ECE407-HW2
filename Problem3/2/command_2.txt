@@ -1,2 +1,4 @@
 openssl enc -aes-128-ecb -in test.bmp -out test_ecb.bmp -K 00112233445566778899aabbccddeeff
 openssl enc -aes-128-cbc -in test.bmp -out test_cbc.bmp -K 00112233445566778899aabbccddeeff -iv 01020304050607080102030405060708
+
+We could see that the message encypted by ecb shows a little bit of the outline of the picture, from which we could infer the picture. But the cbc do not have the outline and it is more safe.
